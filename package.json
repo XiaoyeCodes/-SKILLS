@@ -1,0 +1,69 @@
+{
+  "name": "global-economic-daily-report-skill",
+  "version": "1.0.0",
+  "description": "Claude Code Skill - 自动生成专业的全球经济日报HTML报告",
+  "main": "src/skill.js",
+  "scripts": {
+    "install": "node scripts/install.js",
+    "test": "node scripts/test.js",
+    "demo": "node scripts/demo.js"
+  },
+  "keywords": [
+    "claude-code",
+    "skill",
+    "economic-report",
+    "financial",
+    "stock-market",
+    "html-generator",
+    "global-economy"
+  ],
+  "author": "Claude Code",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/global-economic-daily-report-skill"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/global-economic-daily-report-skill/issues"
+  },
+  "homepage": "https://github.com/yourusername/global-economic-daily-report-skill#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "files": [
+    "src/",
+    "templates/",
+    "examples/",
+    "scripts/",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "skill": {
+    "name": "global-economic-daily-report",
+    "title": "全球经济日报生成器",
+    "category": "finance",
+    "version": "1.0.0",
+    "trigger": [
+      "生成全球经济日报",
+      "经济日报",
+      "全球股市日报",
+      "生成今日经济报告"
+    ],
+    "params": {
+      "date": {
+        "type": "string",
+        "required": false,
+        "description": "指定日期，格式：YYYY年MM月DD日，默认为今日"
+      },
+      "template_path": {
+        "type": "string",
+        "required": false,
+        "description": "参考模板HTML文件的路径"
+      }
+    }
+  }
+}
